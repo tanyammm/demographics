@@ -1,6 +1,7 @@
 {
   "name": "pyramid",
   "version": "0.1.0",
+  "homepage": "https://tanyammm.github.io/demographics/",
   "private": true,
   "dependencies": {
     "@ant-design/charts": "^1.2.14",
@@ -17,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
